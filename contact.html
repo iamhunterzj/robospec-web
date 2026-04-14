@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | ROBOSPEC</title>
+  <link rel="stylesheet" href="./asset/style.css">
+  <link rel="icon" href="./asset/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./asset/favicon/favicon-180x180.png">
+  <style>
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      color: white;
+      padding: 1rem;
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent-primary);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="./asset/logo.png" alt="ROBOSPEC Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="technology.html" class="nav-link">Technology</a></li>
+        <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Module -->
+  <section class="section" style="padding-top: 180px;">
+    <div class="container">
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+
+        <div class="reveal">
+          <h1 class="hero-title text-gradient" style="font-size: 3rem;">Take Action Now<br>Shape the Future of
+            Automation</h1>
+          <p style="color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 2rem;">No longer tolerate
+            inefficient manual labor. Whether you're on a factory floor or a logistics yard, grab a coffee with us and
+            let's explore how we can deploy solutions tailored to your specific pain points.</p>
+          <div class="glass-panel"
+            style="padding: 2rem; border-left: 4px solid var(--accent-primary); border-radius: 0 16px 16px 0;">
+            <p><strong>Global HQ:</strong> LaunchPad, 79 Ayer Rajah Crescent, Singapore 139955</p>
+          </div>
+        </div>
+
+        <div class="glass-panel reveal" style="padding: 3rem;">
+          <form class="contact-form" action="https://formspree.io/f/xvzdolwj" method="POST">
+            <div class="form-group">
+              <label>Full Name*</label>
+              <input type="text" name="name" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label>Company Email*</label>
+              <input type="email" name="email" placeholder="jane@company.com" required>
+            </div>
+            <div class="form-group">
+              <label>Company Name</label>
+              <input type="text" name="company" placeholder="Robotics Industry Corp">
+            </div>
+            <div class="form-group">
+              <label>Tell Us Your Needs*</label>
+              <textarea name="message" rows="5"
+                placeholder="I'm inquiring about non-standard material assembly solutions..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 ROBOSPEC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./asset/main.js"></script>
+</body>
+
+</html>
