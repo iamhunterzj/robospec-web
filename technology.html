@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon/favicon-16x16.png">
   <link rel="apple-touch-icon" href="./asset/favicon/favicon-180x180.png">
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -28,38 +30,273 @@
     </div>
   </nav>
 
-  <!-- Technology Hero -->
-  <header class="section" style="padding-top: 180px; padding-bottom: 80px;">
+  <!-- Hero -->
+  <header class="section" style="padding-top: 180px; padding-bottom: 90px;">
     <div class="container">
-      <h1 class="hero-title reveal text-gradient">Transcending Pre-programmed Scripts<br>Rewiring the Robotic Brain</h1>
-      <p class="section-subtitle reveal" style="max-width: 800px;">Explore our End-to-End Imitation Learning model and see how machines can master entirely new skills simply by observing human workers.</p>
+      <h1 class="hero-title reveal text-gradient">
+        The Missing Layer in Physical AI
+      </h1>
+      <p class="section-subtitle reveal" style="max-width: 850px;">
+        Most robots do not fail because they lack intelligence. They fail because they cannot execute reliably in real
+        production environments.
+        ROBOSPEC builds the action layer that turns human skills into deployable robot work.
+      </p>
     </div>
   </header>
 
-  <!-- Technology Core Layout -->
+  <!-- Why Execution Is Hard -->
   <section class="section" style="border-top: 1px solid var(--border-subtle);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-        
-        <div class="reveal">
-          <div class="video-placeholder" style="border-radius: 16px; height: 400px; opacity: 1;">[Video: Teleoperation Data Collection]</div>
-        </div>
-        
-        <div class="reveal">
-          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--accent-primary);">1. Data Collection</h3>
-          <p style="color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 1.5rem;">We provide an incredibly lightweight teleoperation setup. Front-line engineers need zero coding experience—by simply performing the task naturally once, massive multimodal data is securely transmitted to the cloud.</p>
-        </div>
-
-        <div class="reveal">
-          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--accent-primary);">2. Foundation Model</h3>
-          <p style="color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 1.5rem;">Powered fundamentally by a Vision-Language-Action (VLA) architecture. Our neural networks don't just understand "what" is happening; they make decisions on "how" to do it, perfectly replicating the essence of your operations regarding grip torque and posture.</p>
-        </div>
-        
-        <div class="reveal">
-          <div class="video-placeholder" style="border-radius: 16px; height: 400px; opacity: 1;">[Animation: Large Model Params Visualization]</div>
-        </div>
-
+      <div class="section-header reveal">
+        <h2 class="section-title">Why Real-World Robotics Is Still Hard</h2>
+        <p class="section-subtitle" style="max-width: 850px;">
+          Factory work is often repetitive, but rarely rigid. Parts shift, materials vary, and edge cases appear
+          constantly.
+          Traditional automation breaks when real production departs from the script.
+        </p>
       </div>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 2rem; margin-top: 3rem;">
+        <div class="card reveal">
+          <h3>Unreliable Execution</h3>
+          <p>Real production lines introduce constant variation that hard-coded systems cannot robustly handle.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Too Slow for Control</h3>
+          <p>Many AI-heavy approaches are still too slow or unstable for the responsiveness required in industrial
+            execution.</p>
+        </div>
+        <div class="card reveal">
+          <h3>High Data Requirements</h3>
+          <p>End-to-end systems often require more data, tuning, and iteration than factories can practically provide.
+          </p>
+        </div>
+        <div class="card reveal">
+          <h3>Poor Generalization</h3>
+          <p>What works in a controlled demo often fails under the noise, variation, and interruptions of real factory
+            environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROBOSPEC Approach -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">The ROBOSPEC Approach</h2>
+        <p class="section-subtitle" style="max-width: 860px;">
+          ROBOSPEC takes a deployment-first approach to robotics. Instead of relying purely on end-to-end intelligence,
+          we combine learning and engineering in a layered execution stack designed for real production.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 3rem;">
+        <div class="reveal">
+          <div class="video-placeholder" style="border-radius: 16px; height: 400px; opacity: 1;">
+            [Animation: Layered Execution Stack]
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--accent-primary);">
+            Deployment-First, Execution-Centered
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 1.5rem;">
+            We start from single workstations �?where real work happens, where traditional automation is hardest to
+            justify,
+            and where practical deployment can create immediate ROI.
+          </p>
+          <p style="color: var(--text-secondary); font-size: 1.15rem;">
+            Our system learns from human demonstration, converts skills into structured task-level action models,
+            executes through a layered control stack, and improves continuously from real-world production feedback.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" style="border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">How Human Work Becomes Robot Capability</h2>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 3rem;">
+        <div class="glass-panel reveal"
+          style="padding: 2.5rem; display: flex; align-items: flex-start; gap: 2rem; border-left: 4px solid var(--accent-primary);">
+          <div style="font-size: 3rem; color: var(--accent-primary); font-weight: bold; line-height: 1;">01</div>
+          <div>
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Capture Human Skill</h3>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+              We capture how skilled workers perform real tasks through lightweight teleoperation and demonstration
+              tools.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-panel reveal"
+          style="padding: 2.5rem; display: flex; align-items: flex-start; gap: 2rem; border-left: 4px solid var(--accent-primary);">
+          <div style="font-size: 3rem; color: var(--accent-primary); font-weight: bold; line-height: 1;">02</div>
+          <div>
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Build Action Models</h3>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+              Demonstrations are transformed into structured task-level action models designed for precise, repeatable
+              execution.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-panel reveal"
+          style="padding: 2.5rem; display: flex; align-items: flex-start; gap: 2rem; border-left: 4px solid var(--accent-primary);">
+          <div style="font-size: 3rem; color: var(--accent-primary); font-weight: bold; line-height: 1;">03</div>
+          <div>
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Deploy at the Workstation</h3>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+              The learned skill is deployed directly to a robot workstation without redesigning the full production
+              line.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-panel reveal"
+          style="padding: 2.5rem; display: flex; align-items: flex-start; gap: 2rem; border-left: 4px solid var(--accent-primary);">
+          <div style="font-size: 3rem; color: var(--accent-primary); font-weight: bold; line-height: 1;">04</div>
+          <div>
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Improve in Production</h3>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+              Human correction and production data continuously feed back into the system, improving reliability,
+              adaptability, and long-term scalability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Human in the Loop -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div class="reveal">
+          <h2 class="section-title" style="text-align: left;">Human-in-the-Loop by Design</h2>
+          <p style="color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 1.25rem;">
+            ROBOSPEC is built for practical deployment, not all-or-nothing autonomy.
+            When robots encounter uncertainty, humans can supervise, intervene, and correct.
+          </p>
+          <p style="color: var(--text-secondary); font-size: 1.15rem;">
+            These corrections are not operational overhead �?they are valuable learning signals.
+            This allows us to deploy earlier, reduce real-world risk, and improve faster in production.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="video-placeholder" style="border-radius: 16px; height: 400px; opacity: 1;">
+            [Video: Human Supervisor Correcting Robot Task]
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Flywheel -->
+  <section class="section" style="border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">A Data Flywheel Built in Production</h2>
+        <p class="section-subtitle" style="max-width: 860px;">
+          Every deployment creates more than output �?it creates proprietary learning.
+          Demonstration, deployment, correction, and production usage all feed continuous improvement.
+        </p>
+      </div>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-top: 3rem;">
+        <div class="glass-panel reveal" style="border-top: 3px solid var(--accent-primary); padding: 2rem;">
+          <h3 style="margin-bottom: 1rem;">Demonstration</h3>
+          <p style="color: var(--text-secondary);">Initial worker demonstrations establish the first version of the
+            skill.</p>
+        </div>
+        <div class="glass-panel reveal" style="border-top: 3px solid var(--accent-primary); padding: 2rem;">
+          <h3 style="margin-bottom: 1rem;">Deployment</h3>
+          <p style="color: var(--text-secondary);">The skill runs in production and begins generating task-specific
+            operational data.</p>
+        </div>
+        <div class="glass-panel reveal" style="border-top: 3px solid var(--accent-primary); padding: 2rem;">
+          <h3 style="margin-bottom: 1rem;">Correction</h3>
+          <p style="color: var(--text-secondary);">Human feedback captures edge cases and refines performance where it
+            matters most.</p>
+        </div>
+        <div class="glass-panel reveal" style="border-top: 3px solid var(--accent-primary); padding: 2rem;">
+          <h3 style="margin-bottom: 1rem;">Improvement</h3>
+          <p style="color: var(--text-secondary);">New production data strengthens the model, improves reliability, and
+            accelerates future rollouts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Factory Fit -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Built for Real Manufacturing Environments</h2>
+        <p class="section-subtitle" style="max-width: 850px;">
+          ROBOSPEC is designed for semi-structured, high-variation production work �?the kind of work still handled
+          manually across factories today.
+        </p>
+      </div>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-top: 3rem;">
+        <div class="reveal" style="padding-left: 1.5rem; border-left: 2px solid var(--border-subtle);">
+          <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Single-Workstation Deployment</h3>
+          <p style="color: var(--text-secondary);">Start where ROI is visible, deployment is manageable, and value can
+            be proven quickly.</p>
+        </div>
+        <div class="reveal" style="padding-left: 1.5rem; border-left: 2px solid var(--border-subtle);">
+          <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Existing Hardware Compatible</h3>
+          <p style="color: var(--text-secondary);">Work with practical robot hardware instead of waiting for ideal
+            future platforms.</p>
+        </div>
+        <div class="reveal" style="padding-left: 1.5rem; border-left: 2px solid var(--border-subtle);">
+          <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">No Full-Line Overhaul</h3>
+          <p style="color: var(--text-secondary);">Deploy incrementally without redesigning the entire production
+            system.</p>
+        </div>
+        <div class="reveal" style="padding-left: 1.5rem; border-left: 2px solid var(--border-subtle);">
+          <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Scalable Skill Replication</h3>
+          <p style="color: var(--text-secondary);">Scale by reusing learned skills across workstations, lines, and
+            sites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Singapore -->
+  <section class="section" style="border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Built in Singapore, Designed for Global Deployment</h2>
+        <p class="section-subtitle" style="max-width: 860px;">
+          Headquartered in Singapore, ROBOSPEC is positioned at a trusted and neutral intersection of advanced
+          manufacturing,
+          global capital, and cross-border innovation - building physical AI systems designed to scale across Asia and
+          beyond.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title reveal">Start Small. Scale Fast.</h2>
+      <p class="section-subtitle reveal" style="max-width: 820px; margin: 0 auto;">
+        The future of automation will not be programmed line by line.
+        It will be learned, deployed, and improved in the real world.
+        Start with one workstation and scale from there.
+      </p>
     </div>
   </section>
 
@@ -74,4 +311,5 @@
 
   <script src="./asset/main.js"></script>
 </body>
+
 </html>
