@@ -46,5 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.add('visible');
       }
     });
+
+    // 3. Set Current Year in Footer
+    const currentYearSpan = document.getElementById('currentYear');
+    if (currentYearSpan) {
+      currentYearSpan.textContent = new Date().getFullYear();
+    }
   });
   
