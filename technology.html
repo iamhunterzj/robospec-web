@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technology | ROBOSPEC</title>
+  <title>Technology | HERO: Intelligence Built for Execution | ROBOSPEC</title>
+  <meta name="description" content="HERO is an Execution-First AI Robot Brain built around continuous perception, decision, action, and feedback. Discover why physical AI jobs need execution more than reasoning.">
   <link rel="stylesheet" href="./asset/style.css">
   <link rel="icon" href="./asset/favicon/favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon/favicon-32x32.png">
@@ -31,245 +32,454 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="section" style="padding-top: 180px; padding-bottom: 90px;">
+  <!-- Hero & HERO Brain Architecture Visual -->
+  <header class="section" style="padding-top: 170px; padding-bottom: 70px;">
     <div class="container">
-      <h1 class="hero-title reveal text-gradient">
-        The Missing Layer in Physical AI
+      <div class="hero-badge reveal" style="margin-bottom: 1.25rem;">
+        <span class="badge-dot"></span>
+        <span class="badge-text">HERO BRAIN ARCHITECTURE</span>
+      </div>
+      <h1 class="hero-title reveal text-gradient" style="font-size: clamp(2.75rem, 5.5vw, 4.25rem); margin-bottom: 1.5rem; line-height: 1.15;">
+        Intelligence Built for Execution.
       </h1>
-      <p class="section-subtitle reveal" style="max-width: 850px;">
-        Most robots do not fail because they lack intelligence. They fail because they cannot execute reliably in real
-        production environments.
-        ROBOSPEC builds the action layer that turns human skills into deployable robot work.
+      <p class="section-subtitle reveal" style="max-width: 860px; font-size: 1.35rem; line-height: 1.6; color: #cbd5e1;">
+        HERO is an Execution-First AI Robot Brain built around continuous perception, decision, action and feedback.
       </p>
+
+      <!-- Architecture Visual -->
+      <div class="arch-showcase-wrap reveal">
+        <div class="arch-top-bar">
+          <div style="display: flex; align-items: center; gap: 0.85rem;">
+            <span style="font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; color: #ffffff;">HERO Robot Brain Runtime</span>
+            <span style="font-size: 0.75rem; color: #82b4ff; background: rgba(92,158,255,0.12); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid rgba(92,158,255,0.25);">v2.4 Closed-Loop</span>
+          </div>
+          <div class="arch-runtime-tag">
+            <span class="pulse-dot"></span>
+            <span>Active Closed Loop · 200 Hz</span>
+          </div>
+        </div>
+
+        <div class="arch-diagram-grid">
+          <!-- 4 Core Layers Column -->
+          <div class="arch-layers-col">
+            <!-- Layer 1: Understand -->
+            <div class="arch-layer-card">
+              <div class="arch-layer-head">
+                <div class="arch-layer-title-wrap">
+                  <span class="arch-layer-num">01</span>
+                  <span class="arch-layer-name">Understand</span>
+                </div>
+                <span class="arch-layer-sub">Intent & Goal</span>
+              </div>
+              <p class="arch-layer-desc">Parses human instructions, sensory prompts, and target task directives.</p>
+              <div class="arch-tags-row">
+                <span class="arch-pill">Natural Language</span>
+                <span class="arch-pill">Visual Prompting</span>
+                <span class="arch-pill">Goal State Reasoning</span>
+              </div>
+            </div>
+
+            <!-- Connector Down -->
+            <div class="arch-step-connector">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+              </svg>
+            </div>
+
+            <!-- Layer 2: World State -->
+            <div class="arch-layer-card">
+              <div class="arch-layer-head">
+                <div class="arch-layer-title-wrap">
+                  <span class="arch-layer-num">02</span>
+                  <span class="arch-layer-name">World State</span>
+                </div>
+                <span class="arch-layer-sub">Continuous Perception</span>
+              </div>
+              <p class="arch-layer-desc">Real-time multi-modal spatial tracking, scene geometry, and physical grounding.</p>
+              <div class="arch-tags-row">
+                <span class="arch-pill">Multi-View Vision</span>
+                <span class="arch-pill">3D Affordance</span>
+                <span class="arch-pill">Dynamic Occlusion Tracking</span>
+              </div>
+            </div>
+
+            <!-- Connector Down -->
+            <div class="arch-step-connector">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+              </svg>
+            </div>
+
+            <!-- Layer 3: Plan + Skills -->
+            <div class="arch-layer-card">
+              <div class="arch-layer-head">
+                <div class="arch-layer-title-wrap">
+                  <span class="arch-layer-num">03</span>
+                  <span class="arch-layer-name">Plan + Skills</span>
+                </div>
+                <span class="arch-layer-sub">Dynamic Policy</span>
+              </div>
+              <p class="arch-layer-desc">Decomposes sub-goals into real-time trajectories and reusable motor skill primitives.</p>
+              <div class="arch-tags-row">
+                <span class="arch-pill">Trajectory Generation</span>
+                <span class="arch-pill">Atomic Skills Library</span>
+                <span class="arch-pill">Collision Avoidance</span>
+              </div>
+            </div>
+
+            <!-- Connector Down -->
+            <div class="arch-step-connector">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+              </svg>
+            </div>
+
+            <!-- Layer 4: Execute + Recover -->
+            <div class="arch-layer-card" style="border-color: rgba(92, 158, 255, 0.4); background: rgba(18, 24, 38, 0.9);">
+              <div class="arch-layer-head">
+                <div class="arch-layer-title-wrap">
+                  <span class="arch-layer-num" style="background: rgba(92,158,255,0.25);">04</span>
+                  <span class="arch-layer-name text-gradient">Execute + Recover</span>
+                </div>
+                <span class="arch-layer-sub" style="color: #82b4ff;">High-Speed Action</span>
+              </div>
+              <p class="arch-layer-desc">Closed-loop joint control, slip/force sensing, and millisecond autonomous recovery.</p>
+              <div class="arch-tags-row">
+                <span class="arch-pill" style="border-color: rgba(92,158,255,0.3);">200 Hz Motor Control</span>
+                <span class="arch-pill" style="border-color: rgba(92,158,255,0.3);">Tactile / Force Reflex</span>
+                <span class="arch-pill" style="border-color: rgba(92,158,255,0.3);">Self-Recovery Loop</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outer Loop: Learn -->
+          <div class="arch-learn-col">
+            <div class="arch-learn-card">
+              <div>
+                <span class="arch-learn-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                  </svg>
+                  Outer Feedback Loop
+                </span>
+                <h3 class="arch-learn-title text-gradient">Learn</h3>
+                <p class="arch-learn-sub">
+                  The closed-loop data flywheel that continuously feeds operational execution back into the brain.
+                </p>
+
+                <div class="arch-learn-bullets">
+                  <div class="arch-learn-item">
+                    <span class="arch-learn-item-icon">↳</span>
+                    <span><strong>Execution Telemetry</strong> — Captures high-frequency sensory, torque, and trajectory logs.</span>
+                  </div>
+                  <div class="arch-learn-item">
+                    <span class="arch-learn-item-icon">↳</span>
+                    <span><strong>Recovery Distillation</strong> — Converts real-world edge cases into fine-tuned recovery reflexes.</span>
+                  </div>
+                  <div class="arch-learn-item">
+                    <span class="arch-learn-item-icon">↳</span>
+                    <span><strong>Skill Compounding</strong> — Deploys updated policies without rewriting underlying code.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arch-learn-loop-graphic">
+                <span>Cycles back to Layer 01</span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Why Execution Is Hard -->
-  <section class="section" style="border-top: 1px solid var(--border-subtle);">
+  <!-- Why Execution-First Section -->
+  <section class="section why-execution-section">
     <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Why Real-World Robotics Is Still Hard</h2>
-        <p class="section-subtitle" style="max-width: 850px;">
-          Factory work is often repetitive, but rarely rigid. Parts shift, materials vary, and edge cases appear
-          constantly.
-          Traditional automation breaks when real production departs from the script.
+      <div class="why-execution-header reveal">
+        <div class="hero-badge" style="margin-bottom: 1.25rem;">
+          <span class="badge-dot"></span>
+          <span class="badge-text">THE CORE PARADIGM</span>
+        </div>
+        <h2 class="why-execution-title text-gradient">Why Execution-First?</h2>
+        <p class="section-subtitle" style="max-width: 760px; margin: 1rem auto 0; font-size: 1.25rem; color: #cbd5e1;">
+          Disembodied AI was built for pixels and text. Physical robotics operates in an unforgiving world of friction, variance, and momentum.
         </p>
       </div>
 
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 2rem; margin-top: 3rem;">
-        <div class="card reveal">
-          <h3>Unreliable Execution</h3>
-          <p>Real production lines introduce constant variation that hard-coded systems cannot robustly handle.</p>
+      <div class="execution-compare-grid">
+        <!-- Left: Intelligence-First -->
+        <div class="compare-card intelligence-first reveal">
+          <span class="compare-badge-pill">The Digital AI Approach</span>
+          <h3 class="compare-card-title" style="color: #cbd5e1;">Intelligence-First</h3>
+
+          <div class="compare-flow-box">
+            <span class="flow-step">Observe</span>
+            <span class="flow-sep">→</span>
+            <span class="flow-step">Think</span>
+            <span class="flow-sep">→</span>
+            <span class="flow-step">Generate</span>
+          </div>
+
+          <div class="compare-points-list">
+            <div class="compare-point">
+              <div class="point-icon">✕</div>
+              <div class="point-content">
+                <h4>Reasoning-centric</h4>
+                <p>Prioritizes multi-step token reasoning over real-time physical dynamics and sensor feedback.</p>
+              </div>
+            </div>
+
+            <div class="compare-point">
+              <div class="point-icon">✕</div>
+              <div class="point-content">
+                <h4>High latency</h4>
+                <p>Multi-second inference cycles introduce unacceptable delays in dynamic physical tasks.</p>
+              </div>
+            </div>
+
+            <div class="compare-point">
+              <div class="point-icon">✕</div>
+              <div class="point-content">
+                <h4>One-shot output</h4>
+                <p>Generates an open-loop action plan upfront. Any minor slip, occlusion, or variance causes failure.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card reveal">
-          <h3>Too Slow for Control</h3>
-          <p>Many AI-heavy approaches are still too slow or unstable for the responsiveness required in industrial
-            execution.</p>
+
+        <!-- Right: Execution-First -->
+        <div class="compare-card execution-first reveal">
+          <span class="compare-badge-pill">The HERO Paradigm</span>
+          <h3 class="compare-card-title text-gradient">Execution-First</h3>
+
+          <div class="compare-flow-box" style="border: 1px solid rgba(92,158,255,0.3); background: rgba(14,24,45,0.6);">
+            <span class="flow-step" style="color: #82b4ff;">Observe</span>
+            <span class="flow-sep">→</span>
+            <span class="flow-step" style="color: #82b4ff;">Act</span>
+            <span class="flow-sep">→</span>
+            <span class="flow-step" style="color: #82b4ff;">Feedback</span>
+            <span class="flow-sep">→</span>
+            <span class="flow-step" style="color: #82b4ff;">Adapt</span>
+          </div>
+
+          <div class="compare-points-list">
+            <div class="compare-point">
+              <div class="point-icon">✓</div>
+              <div class="point-content">
+                <h4>Continuous</h4>
+                <p>Perceives, decides, and executes in a seamless, unbroken closed loop.</p>
+              </div>
+            </div>
+
+            <div class="compare-point">
+              <div class="point-icon">✓</div>
+              <div class="point-content">
+                <h4>Responsive</h4>
+                <p>High-frequency sensorimotor reflex loops adapt to unexpected physical variations in real time.</p>
+              </div>
+            </div>
+
+            <div class="compare-point">
+              <div class="point-icon">✓</div>
+              <div class="point-content">
+                <h4>Grounded in the real world</h4>
+                <p>Built from the ground up for physical contact, friction, disturbance recovery, and production reality.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card reveal">
-          <h3>High Data Requirements</h3>
-          <p>End-to-end systems often require more data, tuning, and iteration than factories can practically provide.
-          </p>
-        </div>
-        <div class="card reveal">
-          <h3>Poor Generalization</h3>
-          <p>What works in a controlled demo often fails under the noise, variation, and interruptions of real factory
-            environments.</p>
+      </div>
+
+      <!-- Power Banner Quote -->
+      <div class="execution-quote-banner reveal">
+        <div class="quote-phrase text-gradient">
+          “Physical AI jobs need execution more than reasoning.”
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ROBOSPEC Approach -->
-  <section class="section">
+  <!-- Learning Through Practice Section -->
+  <section class="section practice-section" id="learning-practice">
     <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">The ROBOSPEC Approach</h2>
-        <p class="section-subtitle" style="max-width: 860px;">
-          ROBOSPEC takes a deployment-first approach to robotics. Instead of relying purely on end-to-end intelligence,
-          we combine learning and engineering in a layered execution stack designed for real production.
+      <!-- Section Header -->
+      <div class="practice-header reveal">
+        <div class="hero-badge" style="margin-bottom: 1.25rem;">
+          <span class="badge-dot"></span>
+          <span class="badge-text">CONTINUOUS COMPOUNDING</span>
+        </div>
+        <h2 class="practice-title text-gradient">Learning Through Practice</h2>
+        <p class="practice-subtitle">
+          Robots don't achieve real capability from static simulations or isolated training runs.
+          Mastery is built the same way athletes train: through live deployment, continuous observation, active correction, and compounding execution.
         </p>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 3rem;">
-        <div class="reveal">
-          <div style="border-radius: 16px; height: 400px; display: flex; align-items: center; justify-content: center; background: #ffffff; padding: 1.5rem; box-sizing: border-box;">
-            <img src="./asset/layered_execution_stack.svg" alt="Layered Execution Stack" style="width: 100%; height: 100%; object-fit: contain;">
+      <!-- 5-Step Practice Loop: Deploy -> Observe -> Correct -> Learn -> Better Skill -->
+      <div class="practice-loop-grid reveal">
+        <!-- 01. Deploy -->
+        <div class="practice-step-card">
+          <div class="practice-step-top">
+            <span class="practice-step-num">01</span>
+            <span class="practice-step-tag">Production</span>
           </div>
-        </div>
-        <div class="reveal">
-          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--accent-primary);">
-            Deployment-First, Execution-Centered
-          </h3>
-          <p style="color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 1.5rem;">
-            We start from single workstations - where real work happens, where traditional automation is hardest to
-            justify,
-            and where practical deployment can create immediate ROI.
+          <h3 class="practice-step-title">Deploy</h3>
+          <p class="practice-step-desc">
+            HERO operates on real physical robotic hardware across live, dynamic operational environments.
           </p>
-          <p style="color: var(--text-secondary); font-size: 1.15rem;">
-            Our system learns from human demonstration, converts skills into structured task-level action models,
-            executes through a layered control stack, and improves continuously from real-world production feedback.
+        </div>
+
+        <!-- 02. Observe -->
+        <div class="practice-step-card">
+          <div class="practice-step-top">
+            <span class="practice-step-num">02</span>
+            <span class="practice-step-tag">Perception</span>
+          </div>
+          <h3 class="practice-step-title">Observe</h3>
+          <p class="practice-step-desc">
+            Continuous multi-modal sensors monitor torque, tactile feedback, speed, and real-time variations.
+          </p>
+        </div>
+
+        <!-- 03. Correct (Teleoperation Highlight) -->
+        <div class="practice-step-card highlight-card">
+          <div class="practice-step-top">
+            <span class="practice-step-num">03</span>
+            <span class="practice-step-tag" style="color: #82b4ff;">Teleoperation</span>
+          </div>
+          <h3 class="practice-step-title text-gradient">Correct</h3>
+          <p class="practice-step-desc">
+            When uncertainty arises, human operators intervene via lightweight teleoperation to resolve edge cases instantly.
+          </p>
+        </div>
+
+        <!-- 04. Learn -->
+        <div class="practice-step-card">
+          <div class="practice-step-top">
+            <span class="practice-step-num">04</span>
+            <span class="practice-step-tag">Data Flywheel</span>
+          </div>
+          <h3 class="practice-step-title">Learn</h3>
+          <p class="practice-step-desc">
+            Human demonstrations and recovery trajectories feed directly into the production data flywheel.
+          </p>
+        </div>
+
+        <!-- 05. Better Skill -->
+        <div class="practice-step-card">
+          <div class="practice-step-top">
+            <span class="practice-step-num">05</span>
+            <span class="practice-step-tag">Evolution</span>
+          </div>
+          <h3 class="practice-step-title">Better Skill</h3>
+          <p class="practice-step-desc">
+            Distilled neural policies deploy back to the brain with greater autonomous resilience and higher speed.
           </p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- How It Works -->
-  <section class="section" style="border-top: 1px solid var(--border-subtle);">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">How Human Work Becomes Robot Capability</h2>
-      </div>
-
-      <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 3rem;">
-        <div class="glass-panel reveal"
-          style="padding: 2.5rem; display: flex; align-items: flex-start; gap: 2rem; border-left: 4px solid var(--accent-primary);">
-          <div style="font-size: 3rem; color: var(--accent-primary); font-weight: bold; line-height: 1;">01</div>
-          <div>
-            <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Capture Human Skill</h3>
-            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
-              We capture how skilled workers perform real tasks through lightweight teleoperation and demonstration
-              tools.
-            </p>
-          </div>
-        </div>
-
-        <div class="glass-panel reveal"
-          style="padding: 2.5rem; display: flex; align-items: flex-start; gap: 2rem; border-left: 4px solid var(--accent-primary);">
-          <div style="font-size: 3rem; color: var(--accent-primary); font-weight: bold; line-height: 1;">02</div>
-          <div>
-            <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Build Action Models</h3>
-            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
-              Demonstrations are transformed into structured task-level action models designed for precise, repeatable
-              execution.
-            </p>
-          </div>
-        </div>
-
-        <div class="glass-panel reveal"
-          style="padding: 2.5rem; display: flex; align-items: flex-start; gap: 2rem; border-left: 4px solid var(--accent-primary);">
-          <div style="font-size: 3rem; color: var(--accent-primary); font-weight: bold; line-height: 1;">03</div>
-          <div>
-            <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Deploy at the Workstation</h3>
-            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
-              The learned skill is deployed directly to a robot workstation without redesigning the full production
-              line.
-            </p>
-          </div>
-        </div>
-
-        <div class="glass-panel reveal"
-          style="padding: 2.5rem; display: flex; align-items: flex-start; gap: 2rem; border-left: 4px solid var(--accent-primary);">
-          <div style="font-size: 3rem; color: var(--accent-primary); font-weight: bold; line-height: 1;">04</div>
-          <div>
-            <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Improve in Production</h3>
-            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
-              Human correction and production data continuously feed back into the system, improving reliability,
-              adaptability, and long-term scalability.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Human in the Loop -->
-  <section class="section">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-        <div class="reveal">
-          <h2 class="section-title" style="text-align: left;">Human-in-the-Loop by Design</h2>
-          <p style="color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 1.25rem;">
-            ROBOSPEC is built for practical deployment, not all-or-nothing autonomy.
-            When robots encounter uncertainty, humans can supervise, intervene, and correct.
-          </p>
-          <p style="color: var(--text-secondary); font-size: 1.15rem;">
-            These corrections are not operational overhead - they are valuable learning signals.
-            This allows us to deploy earlier, reduce real-world risk, and improve faster in production.
-          </p>
-        </div>
-        <div class="reveal">
-          <div style="border-radius: 16px; height: 400px; display: flex; align-items: center; justify-content: center; background: #ffffff; padding: 1.5rem; box-sizing: border-box;">
-            <img src="./asset/robospec_hitl.svg" alt="Human-in-the-Loop Concept" style="width: 100%; height: 100%; object-fit: contain;">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Data Flywheel -->
-  <section class="section" style="border-top: 1px solid var(--border-subtle);">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">A Data Flywheel Built in Production</h2>
-        <p class="section-subtitle" style="max-width: 860px;">
-          Every deployment creates more than output - it creates proprietary learning.
-          Demonstration, deployment, correction, and production usage all feed continuous improvement.
+      <!-- Teleoperation Positioning Callout Banner -->
+      <div class="teleop-positioning-banner reveal">
+        <span class="teleop-banner-tag">Architecture Perspective</span>
+        <h3 class="teleop-banner-title">
+          Teleoperation is not a product we sell.<br>
+          <span class="text-gradient">It is part of the HERO learning infrastructure.</span>
+        </h3>
+        <p class="teleop-banner-desc">
+          We do not treat teleoperation as a permanent manual crutch or a detached hardware product. Instead, it serves as the essential real-world sensory bridge that captures expert human dexterity and funnels high-value ground-truth training signals directly into HERO’s continuous learning loop.
         </p>
       </div>
 
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-top: 3rem;">
-        <div class="glass-panel reveal" style="border-top: 3px solid var(--accent-primary); padding: 2rem;">
-          <h3 style="margin-bottom: 1rem;">Demonstration</h3>
-          <p style="color: var(--text-secondary);">Initial worker demonstrations establish the first version of the
-            skill.</p>
+      <!-- Two Deep-Dive Foundations: Human-in-the-Loop & Data Flywheel -->
+      <div class="practice-deep-grid">
+        <!-- Deep Dive 1: Human-in-the-Loop by Design -->
+        <div class="practice-deep-card reveal">
+          <span class="deep-card-badge">Zero Stoppage Autonomy</span>
+          <h3 class="deep-card-title">Human-in-the-Loop by Design</h3>
+          <p class="deep-card-text">
+            ROBOSPEC is built for practical deployment, not all-or-nothing autonomy that halts operations when edge cases occur. When robots encounter low-confidence states, humans supervise, intervene, and correct in real time.
+          </p>
+          <div class="deep-features-list">
+            <div class="deep-feature-item">
+              <div class="deep-feature-dot">✓</div>
+              <div class="deep-feature-content">
+                <h5>Interventions as Learning Signals</h5>
+                <p>Corrections are not operational overhead — they are the highest-value ground truth demonstrations.</p>
+              </div>
+            </div>
+            <div class="deep-feature-item">
+              <div class="deep-feature-dot">✓</div>
+              <div class="deep-feature-content">
+                <h5>Early Deployment with Low Risk</h5>
+                <p>Deploy robots earlier in live environments with human supervision safeguarding critical operational uptime.</p>
+              </div>
+            </div>
+            <div class="deep-feature-item">
+              <div class="deep-feature-dot">✓</div>
+              <div class="deep-feature-content">
+                <h5>Native Teleoperation Integration</h5>
+                <p>Teleoperation is embedded directly into HERO's sensory stack to capture joint trajectories and tactile forces.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="glass-panel reveal" style="border-top: 3px solid var(--accent-primary); padding: 2rem;">
-          <h3 style="margin-bottom: 1rem;">Deployment</h3>
-          <p style="color: var(--text-secondary);">The skill runs in production and begins generating task-specific
-            operational data.</p>
-        </div>
-        <div class="glass-panel reveal" style="border-top: 3px solid var(--accent-primary); padding: 2rem;">
-          <h3 style="margin-bottom: 1rem;">Correction</h3>
-          <p style="color: var(--text-secondary);">Human feedback captures edge cases and refines performance where it
-            matters most.</p>
-        </div>
-        <div class="glass-panel reveal" style="border-top: 3px solid var(--accent-primary); padding: 2rem;">
-          <h3 style="margin-bottom: 1rem;">Improvement</h3>
-          <p style="color: var(--text-secondary);">New production data strengthens the model, improves reliability, and
-            accelerates future rollouts.</p>
+
+        <!-- Deep Dive 2: A Data Flywheel Built in Production -->
+        <div class="practice-deep-card reveal">
+          <span class="deep-card-badge">Continuous Compounding</span>
+          <h3 class="deep-card-title">A Data Flywheel Built in Production</h3>
+          <p class="deep-card-text">
+            Every physical deployment generates proprietary data that cannot be manufactured in simulation. Demonstration, deployment, correction, and live operational feedback compound into continuous intelligence.
+          </p>
+          <div class="deep-features-list">
+            <div class="deep-feature-item">
+              <div class="deep-feature-dot">✓</div>
+              <div class="deep-feature-content">
+                <h5>Demonstration</h5>
+                <p>Initial expert demonstrations establish the baseline policy and task boundaries.</p>
+              </div>
+            </div>
+            <div class="deep-feature-item">
+              <div class="deep-feature-dot">✓</div>
+              <div class="deep-feature-content">
+                <h5>Deployment & Telemetry</h5>
+                <p>Live execution streams rich multi-modal sensor and torque logs across physical interactions.</p>
+              </div>
+            </div>
+            <div class="deep-feature-item">
+              <div class="deep-feature-dot">✓</div>
+              <div class="deep-feature-content">
+                <h5>Correction & Edge-Case Distillation</h5>
+                <p>Human teleoperated recoveries isolate edge cases and train autonomous error-recovery reflexes.</p>
+              </div>
+            </div>
+            <div class="deep-feature-item">
+              <div class="deep-feature-dot">✓</div>
+              <div class="deep-feature-content">
+                <h5>Fleet-Wide Improvement</h5>
+                <p>Refined skill models propagate back to all connected embodiments without manual reprogramming.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Factory Fit -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Built for Real Manufacturing Environments</h2>
-        <p class="section-subtitle" style="max-width: 850px;">
-          ROBOSPEC is designed for semi-structured, high-variation production work - the kind of work still handled
-          manually across factories today.
-        </p>
-      </div>
-
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-top: 3rem;">
-        <div class="reveal" style="padding-left: 1.5rem; border-left: 2px solid var(--border-subtle);">
-          <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Single-Workstation Deployment</h3>
-          <p style="color: var(--text-secondary);">Start where ROI is visible, deployment is manageable, and value can
-            be proven quickly.</p>
-        </div>
-        <div class="reveal" style="padding-left: 1.5rem; border-left: 2px solid var(--border-subtle);">
-          <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Existing Hardware Compatible</h3>
-          <p style="color: var(--text-secondary);">Work with practical robot hardware instead of waiting for ideal
-            future platforms.</p>
-        </div>
-        <div class="reveal" style="padding-left: 1.5rem; border-left: 2px solid var(--border-subtle);">
-          <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">No Full-Line Overhaul</h3>
-          <p style="color: var(--text-secondary);">Deploy incrementally without redesigning the entire production
-            system.</p>
-        </div>
-        <div class="reveal" style="padding-left: 1.5rem; border-left: 2px solid var(--border-subtle);">
-          <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Scalable Skill Replication</h3>
-          <p style="color: var(--text-secondary);">Scale by reusing learned skills across workstations, lines, and
-            sites.</p>
-        </div>
+  <!-- CTA Section -->
+  <section class="section" style="padding: 7rem 0; border-top: 1px solid var(--border-subtle); background: var(--bg-primary);">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title reveal text-gradient">Build on the HERO Robot Brain</h2>
+      <p class="section-subtitle reveal" style="max-width: 740px; margin: 0 auto 2.5rem; font-size: 1.25rem; color: #cbd5e1;">
+        Connect your hardware to an execution-first intelligence that learns and improves through every physical task.
+      </p>
+      <div class="reveal" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.9rem 2.25rem; font-size: 1.05rem;">Request Demo & Technical Brief</a>
+        <a href="about.html" class="btn btn-outline" style="padding: 0.9rem 2.25rem; font-size: 1.05rem;">Our Founder Philosophy</a>
       </div>
     </div>
   </section>
